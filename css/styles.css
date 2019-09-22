@@ -8,7 +8,7 @@
     padding: 70px;
 }
 .jumbotron{
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     text-align: center;
     background-color: black;
@@ -16,8 +16,15 @@
 .jumbotron h1,h2{
     float: left;
     color: antiquewhite;
+    font-size: 70px;
 }
 .jumbotron p{
+
     align-content: center;
     color: antiquewhite;
+}
+.container{
+    background-image: url(../images/images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
