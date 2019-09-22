@@ -1,34 +1,39 @@
 
 var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var male = ["Kwasi". "Kwadwo","Kwabena","Kwaku","Yaw"," Kofi"," Kwame"];
+var male = ["Kwasi","Kwandwo","Kwabena","Kwaku","Yaw"," Kofi"," Kwame"];
 var female = ["Akosua"," Adwoa","Abenaa"," Akua","Yaa","Afua","Ama"];
 
-function AkanName(){
-    var Year1 = parseInt(document.getElementById("Year1"));
-    var Month1 = parseInt(document.getElementById("Month1"));
-    var Date1 = parseInt(document.getElementById("Date1"));
-    var gender = getgender();
-
-    if((Date1 < 0) || (Date1 > 31)) {
-        alert("Date not valid!");
-     } 
-     
-     else if((Month1 < 0) || (Month1 > 12)) {
-            alert("Month not valid!");
-         }
-         
-         else(Year1 < 1900) {
-            alert("Please,enter range(1900-present)!");
-
-         } var Date1 =new Date(Date1+ "-"+Month1+"-" +Year1);
-         var bd = date.getdate();
-         var getAkanName;
-     
+function AkanName (){
+    var Year1 = parseInt(document.getElementById("Year1").value);
+    if(Year1 < 1900) {
+        alert("Please,enter range(1900-present)!");
      }
-function getgender(){
+    var Month1 = parseInt(document.getElementById("Month1").value);
+ if{
+    ((Month1 < 0) || (Month1 > 12)) {
+       alert("Month not valid!")..);
+    }
+    var Date1 = parseInt(document.getElementById("Date1").value);
+   
+if((Date1 < 0) || (Date1 > 31)) {
+        alert("Date not valid!");
+    }
+  
+
+    var day =new day(Date1 +"-"+Month1 +"-"+Year1);
+    var bd = day.getdate1();
+    var AkanName;
+  
+
+ var gender = document.getElementById("gender"}.value};
+ function getgender(){
+     return gender;
+        }
     if (gender==="male"){
-        AkanName = maleName(day);
+        AkanName = maleName(bd);
     }
     else{
-        AkanName = femaleName(day);
+        AkanName = femaleName(bd);
     }
+    alert("Your day of birth is" +day[bd]+"and you AKAN name is"+AkanName);
+}
