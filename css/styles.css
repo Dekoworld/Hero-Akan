@@ -1,4 +1,4 @@
-.container form{
+.container-fluid form{
     width: 350px;
     border: solid black;
     margin-top: 5px;
@@ -6,6 +6,7 @@
     margin-left: 350px;
     margin-bottom: 5px;
     padding: 70px;
+    align-content: center;
 }
 .jumbotron{
     background-image: url(../images/free.jpeg);
@@ -23,9 +24,4 @@
     font-size: 23px;
     align-content: center;
     color: black;
-}
-.container{
-    background-image: url(../images/images.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
